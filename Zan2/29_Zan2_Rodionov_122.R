@@ -37,3 +37,4 @@ sK2O=sd(dat122$K2O);sK2O
 #посчитаем коэффициент вариации
 vNO3=100*sNO3/mNO3;vNO3
 vK2O=100*sK2O/mK2O;vK2O
+
