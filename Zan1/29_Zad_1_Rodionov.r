@@ -196,7 +196,7 @@ getwd()
 setwd("C:/Group_122/Aleksey_Rodionov/MathMod")
 getwd()
 
-
+setwd("C:/Group_122/Aleksey_Rodionov/MathMod/Zan1")
 
 
 x=5/0;x
@@ -252,9 +252,6 @@ novod29$A1
 names(novod29)
 
 #График зависимости содержания гумуса и подвижного калия
-a=read.table("Rodionov_pole123.csv",header=TRUE,sep=";",dec=".")
-a
-x=a$"Humus"
-y=a$"K2O"
-plot(x,y,type="p",xlab="Гумус",ylab="обменный калий",main="График зависимости")
-write.table(a,"novod.csv",sep=";",dec=",",quote=FALSE)
+
+plot(novod29$Humus,novod29$K2O,type="p",xlab="Гумус",ylab="обменный калий",main="График зависимости")
+write.table(novod29,"novod.csv",sep=";",dec=",",quote=FALSE)

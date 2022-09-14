@@ -9,22 +9,20 @@ dim(dat122)
 #Узнаем имена переменных 
 names(dat122)
 str(dat122)
-##Выведем только одну переменную - содержание NO3
+##Выведем две переменные - содержание NO3 и  K2O
 dat122$NO3
-#length(x) - функция измерения длины вектора
-x=c(2, 4, 5, 3, -4, 0)
-length(x)
-# выведем тип переменной
-mode(x)
-##Выведем только вторую переменную - содержание K2O
 dat122$K2O
-y=c(6,5,8,-2,-3,4)
-length(y)
-mode(y)
-min(x)
-min(y)
-max(x)
-max(y)
+#length(x) - функция измерения длины вектора
+length(dat122$NO3)
+length(dat122$K2O)
+# выведем тип переменной
+mode(dat122$NO3)
+mode(dat122$K2O)
+
+min(dat122$NO3)
+min(dat122$K2O)
+max(dat122$NO3)
+max(dat122$K2O)
 # посчитаем дисперсию
 varNO3=var(dat122$NO3);varNO3
 varK2O=var(dat122$K2O);varK2O
